@@ -7,6 +7,7 @@ then
 	sudo apt install -y htop
 	echo "installation done successfully!"
 	echo "running htop command for you :)"
+	echo "The exitcode for the package to install or uninstall is: $?"
 	htop
 fi
 
@@ -19,11 +20,16 @@ then
 		echo "removing htop......"
 		sudo apt purge -y htop
 		echo "htop has been removed!!!"
+		echo "The exitcode for the package to install or uninstall is: $?"
 		exit
 	else
 		echo "htop is still there, not removed at all"
+		echo "The exitcode for the package to install or uninstall is: $?"
 		exit
 	fi
 fi
+
+
+sleep 5
 
 ./class5S3.sh
