@@ -10,7 +10,7 @@ echo "5- friday"
 echo "6- saturday"
 echo "7- sunday"
 
-read distro
+read distro;
 
 case $distro in
 	1) echo "its monday";;
