@@ -1,2 +1,2 @@
 # bash-scripting-LLTV
-Learning bash scripting
+trying to do bash scripting :)
